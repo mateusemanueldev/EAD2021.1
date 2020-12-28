@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="icon.png"/>
+    <link rel="icon" href="icon.png" />
     <title>EAD 2020.2</title>
     <style>
         body {
@@ -13,14 +13,14 @@
             background-position: center center;
             margin: 0;
             padding: 2em;
-           /* background: rgb(36, 36, 36);
+            /*background: rgb(36, 36, 36);
             background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
             background-size: cover;*/
         }
 
         @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
-        ul {
+        .conteudo ul {
             list-style: none;
             display: flex;
             flex-direction: row;
@@ -31,13 +31,17 @@
 
         }
 
-        a {
+        .conteudo a {
             text-decoration: none;
             color: rgb(121, 37, 255);
+            cursor: pointer;
         }
-      
 
-        li {
+        .conteudo {
+            z-index: 1000;
+        }
+
+        .conteudo li {
             background-color: rgb(121, 37, 255);
             color: white;
             padding: 15pt;
@@ -46,7 +50,7 @@
             text-align: center;
             border-radius: 10pt;
             font-family: Arial, Helvetica, sans-serif;
-          
+
         }
 
         h2 {
@@ -63,6 +67,10 @@
             outline: none;
         }
 
+        .efeito ul {
+            z-index: -1;
+            padding: 0;
+        }
 
         .circles {
             position: absolute;
@@ -181,29 +189,28 @@
 
 
 
-        @media only screen and (max-width: 500px) {
+        @media only screen and (max-width: 600px) {
 
             body {
-                padding: 0;
+                padding-top: 8em;
                 margin: 0;
+                background-position: center;
             }
 
-            ul {
-                flex-direction: column;
-                padding: 2em 0 0 0;
-                margin: 0;
-            }
-            
-
-            li {
+            .conteudo li {
+                margin: 10pt 0;
                 width: 140pt;
+            }
+            .conteudo h2{
+                font-size: 13pt;
             }
 
             .circles {
-                height: 250%;
+                height: 270%;
                 margin: 0;
             }
-            .circles li{
+
+            .circles li {
                 padding: 0;
                 margin: 0;
             }
@@ -228,56 +235,60 @@
 </head>
 
 <body>
-    <ul class="conteudo">
-        <li>
-            <h2>Mobile</h2>
-            <p>Segundas e Terças <br />de 13:30 as 15:30</p>
-            <strong>Jeferson</strong><br /><br />
-            <button><a href="https://meet.google.com/ijc-qpxu-tqt" target="_blank">ENTRAR NA SALA</a></button>
-        </li>
-        <li>
-            <h2>APS</h2>
-            <p>Segunda de 10:00 as 12:00<br />Terça de 08:00 as 10:00</p>
-            <strong>Jeferson</strong><br /><br />
-            <button><a href="https://meet.google.com/nmz-fdcq-asq" target="_blank">ENTRAR NA SALA</a></button>
-        </li>
-        <li>
-            <h2>Design e Inovação</h2>
-            <p>Quartas e Quintas <br />de 13:30 as 15:30</p>
-            <strong>Paulo</strong><br /><br />
-            <button><a href="https://meet.google.com/amm-oezr-kui" target="_blank">ENTRAR NA SALA</a></button>
-        </li>
-        <li>
-            <h2>CDP</h2>
-            <p>Quarta de 15:30 as 17:30<br />Terça de 13:30 as 15:30</p>
-            <strong>José Neto</strong><br /><br />
-            <button><a href="https://meet.google.com/vzo-bxfz-chq" target="_blank">ENTRAR NA SALA</a></button>
-        </li>
-        <li>
-            <h2>Empreendedorismo</h2>
-            <p>Quintas e Sextas <br />das 20:00 as 22:00</p>
-            <strong>Alberto</strong><br /><br />
-            <button><a href="" target="_blank">ENTRAR NA SALA</a></button>
-        </li>
-        <li>
-            <h2>Projeto IV</h2>
-            <p>Quintas e Sextas <br />de 15:30 as 17:30</p>
-            <strong>Germana</strong><br /><br />
-            <button><a href="https://meet.google.com/vuy-uwwi-zms" target="_blank">ENTRAR NA SALA</a></button>
-        </li>
-    </ul>
-    <ul class="circles">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
+    <div class="conteudo">
+        <ul>
+            <li>
+                <h2>Mobile</h2>
+                <p>Segundas e Terças <br />de 13:30 as 15:30</p>
+                <strong>Jeferson</strong><br /><br />
+                <button><a href="https://meet.google.com/ijc-qpxu-tqt" target="_blank">ENTRAR NA SALA</a></button>
+            </li>
+            <li>
+                <h2>APS</h2>
+                <p>Segunda de 10:00 as 12:00<br />Terça de 08:00 as 10:00</p>
+                <strong>Jeferson</strong><br /><br />
+                <button><a href="https://meet.google.com/nmz-fdcq-asq" target="_blank">ENTRAR NA SALA</a></button>
+            </li>
+            <li>
+                <h2>Design e Inovação</h2>
+                <p>Quartas e Quintas <br />de 13:30 as 15:30</p>
+                <strong>Paulo</strong><br /><br />
+                <button><a href="https://meet.google.com/amm-oezr-kui" target="_blank">ENTRAR NA SALA</a></button>
+            </li>
+            <li>
+                <h2>CDP</h2>
+                <p>Quarta de 15:30 as 17:30<br />Terça de 13:30 as 15:30</p>
+                <strong>José Neto</strong><br /><br />
+                <button><a href="https://meet.google.com/vzo-bxfz-chq" target="_blank">ENTRAR NA SALA</a></button>
+            </li>
+            <li>
+                <h2>Empreendedorismo</h2>
+                <p>Quintas e Sextas <br />das 20:00 as 22:00</p>
+                <strong>Alberto</strong><br /><br />
+                <button><a href="" target="_blank">ENTRAR NA SALA</a></button>
+            </li>
+            <li>
+                <h2>Projeto IV</h2>
+                <p>Quintas e Sextas <br />de 15:30 as 17:30</p>
+                <strong>Germana</strong><br /><br />
+                <button><a href="https://meet.google.com/vuy-uwwi-zms" target="_blank">ENTRAR NA SALA</a></button>
+            </li>
+        </ul>
+    </div>
+    <div class="efeito">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
 </body>
 
 </html>
