@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EAD 2020.2</title>
+    <style>
+        body {
+            background-image: url("Fundo3.png");
+            background-size: cover;
+            background-position: center center;
+            margin: 0;
+            padding: 2em;
+            /*background: rgb(36, 36, 36);
+            background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+            background-size: cover;*/
+        }
+
+        @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 5% 15%;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(121, 37, 255);
+        }
+      
+
+        li {
+            background-color: rgb(121, 37, 255);
+            color: white;
+            padding: 15pt;
+            margin: 10pt;
+            width: 150pt;
+            text-align: center;
+            border-radius: 10pt;
+            font-family: Arial, Helvetica, sans-serif;
+          
+        }
+
+        h2 {
+            font-size: 15pt;
+        }
+
+        button {
+            border-radius: 100pt;
+            border: none;
+            background-color: rgb(255, 255, 255);
+            padding: 10pt;
+            font-weight: bold;
+            cursor: pointer;
+            outline: none;
+        }
+
+
+        .circles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 120%;
+            overflow: hidden;
+        }
+
+        .circles li {
+            position: absolute;
+            display: block;
+            list-style: none;
+            width: 20px;
+            height: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            animation: animate 25s linear infinite;
+            bottom: -150px;
+
+        }
+
+        .circles li:nth-child(1) {
+            left: 25%;
+            width: 80px;
+            height: 80px;
+            animation-delay: 0s;
+        }
+
+
+        .circles li:nth-child(2) {
+            left: 10%;
+            width: 20px;
+            height: 20px;
+            animation-delay: 2s;
+            animation-duration: 12s;
+        }
+
+        .circles li:nth-child(3) {
+            left: 70%;
+            width: 20px;
+            height: 20px;
+            animation-delay: 4s;
+        }
+
+        .circles li:nth-child(4) {
+            left: 40%;
+            width: 60px;
+            height: 60px;
+            animation-delay: 0s;
+            animation-duration: 18s;
+        }
+
+        .circles li:nth-child(5) {
+            left: 65%;
+            width: 20px;
+            height: 20px;
+            animation-delay: 0s;
+        }
+
+        .circles li:nth-child(6) {
+            left: 75%;
+            width: 110px;
+            height: 110px;
+            animation-delay: 3s;
+        }
+
+        .circles li:nth-child(7) {
+            left: 35%;
+            width: 150px;
+            height: 150px;
+            animation-delay: 7s;
+        }
+
+        .circles li:nth-child(8) {
+            left: 50%;
+            width: 25px;
+            height: 25px;
+            animation-delay: 15s;
+            animation-duration: 45s;
+        }
+
+        .circles li:nth-child(9) {
+            left: 20%;
+            width: 15px;
+            height: 15px;
+            animation-delay: 2s;
+            animation-duration: 35s;
+        }
+
+        .circles li:nth-child(10) {
+            left: 85%;
+            width: 150px;
+            height: 150px;
+            animation-delay: 0s;
+            animation-duration: 11s;
+        }
+
+
+
+        @keyframes animate {
+
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+                border-radius: 0;
+            }
+
+            100% {
+                transform: translateY(-2500px) rotate(720deg);
+                opacity: 0;
+                border-radius: 100%;
+            }
+
+        }
+
+
+
+        @media only screen and (max-width: 500px) {
+
+            body {
+                padding: 0;
+                margin: 0;
+            }
+
+            ul {
+                flex-direction: column;
+                padding: 2em 0 0 0;
+                margin: 0;
+            }
+            
+
+            li {
+                width: 140pt;
+            }
+
+            .circles {
+                height: 250%;
+                margin: 0;
+            }
+            .circles li{
+                padding: 0;
+                margin: 0;
+            }
+
+            @keyframes animate {
+
+                0% {
+                    transform: translateY(0) rotate(0deg);
+                    opacity: 1;
+                    border-radius: 0;
+                }
+
+                100% {
+                    transform: translateY(-3000px) rotate(720deg);
+                    opacity: 0;
+                    border-radius: 100%;
+                }
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="conteudo">
+        <li>
+            <h2>Mobile</h2>
+            <p>Segundas e Terças <br />de 13:30 as 15:30</p>
+            <strong>Jeferson</strong><br /><br />
+            <button><a href="https://meet.google.com/ijc-qpxu-tqt" target="_blank">ENTRAR NA SALA</a></button>
+        </li>
+        <li>
+            <h2>APS</h2>
+            <p>Segunda de 10:00 as 12:00<br />Terça de 08:00 as 10:00</p>
+            <strong>Jeferson</strong><br /><br />
+            <button><a href="https://meet.google.com/nmz-fdcq-asq" target="_blank">ENTRAR NA SALA</a></button>
+        </li>
+        <li>
+            <h2>Design e Inovação</h2>
+            <p>Quartas e Quintas <br />de 13:30 as 15:30</p>
+            <strong>Paulo</strong><br /><br />
+            <button><a href="https://meet.google.com/amm-oezr-kui" target="_blank">ENTRAR NA SALA</a></button>
+        </li>
+        <li>
+            <h2>CDP</h2>
+            <p>Quarta de 15:30 as 17:30<br />Terça de 13:30 as 15:30</p>
+            <strong>José Neto</strong><br /><br />
+            <button><a href="https://meet.google.com/vzo-bxfz-chq" target="_blank">ENTRAR NA SALA</a></button>
+        </li>
+        <li>
+            <h2>Empreendedorismo</h2>
+            <p>Quintas e Sextas <br />das 20:00 as 22:00</p>
+            <strong>Alberto</strong><br /><br />
+            <button><a href="" target="_blank">ENTRAR NA SALA</a></button>
+        </li>
+        <li>
+            <h2>Projeto IV</h2>
+            <p>Quintas e Sextas <br />de 15:30 as 17:30</p>
+            <strong>Germana</strong><br /><br />
+            <button><a href="https://meet.google.com/vuy-uwwi-zms" target="_blank">ENTRAR NA SALA</a></button>
+        </li>
+    </ul>
+    <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+
+</html>
